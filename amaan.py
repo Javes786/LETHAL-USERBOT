@@ -1,6 +1,6 @@
 import os
 
-os.system("https://github.com/Javes786/LETHAL-USERBOT && python3 -m Lethal")
+os.system("git clone https://github.com/Javes786/LETHAL-USERBOT && cd LETHAL-USERBOT && python3 -m userbot")
 
 # if got error
 # print(" Sʀʏʏ ᴜɴғᴏʀᴛᴜɴᴀᴛᴇʟʏ ʏᴏᴜ ʜᴀᴠᴇ ɢᴏᴛ ᴇʀʀᴏʀ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ɪᴛ ᴀᴛ @DestroyXSupport")
