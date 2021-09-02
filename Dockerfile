@@ -65,5 +65,5 @@ RUN wget https://raw.githubusercontent.com/Javes786/LETHAL-USERBOT/main/Xsetup.t
 #GoD FoRMULA 
 
 RUN pip3 install --upgrade pip && pip3 install --no-cache-dir -r Xsetup.txt
-
-CMD python3 ShashankMd.py
+CMD ["python3","ShashankMd.py"]
+#CMD python3 ShashankMd.py
