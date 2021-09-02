@@ -36,3 +36,6 @@ with TelegramClient(StringSession(), APP_ID, API_HASH) as client:
     print("")
     print("")
     print(client.session.save())
+    print("")
+    print("")
+    print("NiKaL LauDe PeHLi FuRSaT Mai NiKAL")
