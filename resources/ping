@@ -4,7 +4,7 @@ from datetime import datetime
 from Lethal.__init__ import StartTime
 from Lethal.plugins import ALIVE_NAME, OWNER_ID, TG_BOT_USER_NAME_BF_HER
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "υsεя"
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -44,5 +44,5 @@ async def _(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await eor(event,
-        f"**█░░ █ █▀█ █▄░█\n█▄▄ █ █▄█ █░▀█**\n\n➤ **тιмє тαкєи:** `{ms}` мѕ \n➤ **𝐏𝐄𝐑𝐔 𝐌𝐀𝐒𝐓𝐄𝐑:** `[{DEFAULTUSER}](tg://user?id={OWNER_ID})`\n**➤ 𝐋𝐈𝐎𝐍 𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐓:** __@{TG_BOT_USER_NAME}__\n𝐂𝐔𝐑𝐑𝐄𝐍𝐓 𝐕𝐄𝐑: `2.2`"
+        f"**█░░ █ █▀█ █▄░█\n█▄▄ █ █▄█ █░▀█**\n\n➤ **тιмє тαкєи:** `{ms}` мѕ \n➤ **𝐏𝐄𝐑𝐔 𝐌𝐀𝐒𝐓𝐄𝐑:** `[{DEFAULTUSER}](tg://user?id={OWNER_ID})`\n**➤ 𝗟𝗘𝗧𝗛𝗔𝗟 𝐀𝐒𝐒𝐈𝐒𝐓𝐀𝐍𝐓:** __@{TG_BOT_USER_NAME}__\n𝐂𝐔𝐑𝐑𝐄𝐍𝐓 𝐕𝐄𝐑: `0.1`"
     )
