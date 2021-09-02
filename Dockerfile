@@ -59,11 +59,11 @@ RUN wget -O chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -
     unzip chromedriver.zip chromedriver -d /usr/bin/ && \
     rm chromedriver.zip
 
-RUN wget https://raw.githubusercontent.com/Javes786/LETHAL-USERBOT/main/ShashankMd.py
+RUN wget https://raw.githubusercontent.com/Javes786/LETHAL-USERBOT/main/amaan.py
 RUN wget https://raw.githubusercontent.com/Javes786/LETHAL-USERBOT/main/Xsetup.txt
 
 #GoD FoRMULA 
 
 RUN pip3 install --upgrade pip && pip3 install --no-cache-dir -r Xsetup.txt
-CMD ["python3","ShashankMd.py"]
+CMD ["python3","amaan.py"]
 #CMD python3 ShashankMd.py
