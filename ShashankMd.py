@@ -1,7 +1,7 @@
 import os
 from os import system
 
-os.system("https://github.com/Javes786/LETHAL-USERBOT && cd LETHAL-USERBOT && python3 -m userbot")
+os.system("https://github.com/Javes786/LETHAL-USERBOT && cd LETHAL-USERBOT && python3 -m Lethal")
 # if got error
 print(" Sʀʏʏ ᴜɴғᴏʀᴛᴜɴᴀᴛᴇʟʏ ʏᴏᴜ ʜᴀᴠᴇ ɢᴏᴛ ᴇʀʀᴏʀ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ɪᴛ ᴀᴛ @DestroyXSupport")
 # Script written for stop heroku suspension
