@@ -16,7 +16,7 @@ from os import environ, execle, path, remove
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-from Lethal import CMD_HNDLR
+from Lethal import CMD_HNDLR, ALIVE_NAME
 
 requirements_path = path.join(
     path.dirname(path.dirname(path.dirname(__file__))), "Xsetup.txt"
@@ -111,7 +111,7 @@ async def upstream(ups):
 
     if not changelog and not force_updateme:
         await ups.edit(
-            f"\n`Your BOT is`  **up-to-date**  `with`  **[[{ac_br}]]({UPSTREAM_REPO_URL}/tree/{ac_br})**\n"
+            f"\n`{ALIVE_NAME} is`  **up-to-date**  `with`  **[[{ac_br}]]({UPSTREAM_REPO_URL}/tree/{ac_br})**\n"
         )
         repo.__del__()
         return
