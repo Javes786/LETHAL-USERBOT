@@ -14,7 +14,7 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-# (c) @xditya
+# (c) @xditya Maa Chudaye
 
 import re
 from Lethal.plugins.mybot import *
@@ -85,7 +85,7 @@ async def start_all(event):
                                   caption=startotherena,
                                   buttons=[
                                       [Button.url(
-                                          "Lethal", url="https://github.com/TeamLETHAL-USERBOT/LETHAL-USERBOT")],
+                                          "Lethal", url="https://github.com/Javes786/LETHAL-USERBOT")],
                                       [Button.inline(
                                           "Whats this?", data="Lethal")]
                                   ]
@@ -95,7 +95,7 @@ async def start_all(event):
                                      startotherena,
                                      buttons=[
                                          [Button.url(
-                                             "Lethal", url="https://github.com/TeamLETHAL-USERBOT/LETHAL-USERBOT")],
+                                             "Lethal", url="https://github.com/Javes786/LETHAL-USERBOT")],
                                          [Button.inline(
                                              "Whats this?", data="Lethal")]
                                      ]
@@ -182,8 +182,8 @@ async def settings(event):
 async def settings(event):
     await event.edit("Browse through the available options:",
                      buttons=[
-                         [(Button.url("Repository", url="https://github.com/TeamLETHAL-USERBOT/LETHAL-USERBOT")),
-                          (Button.url("Deploy", url="https://dashboard.heroku.com/new?template=https://github.com/TeamLETHAL-USERBOT/LETHAL-USERBOT"))],
+                         [(Button.url("Repository", url="https://github.com/Javes786/LETHAL-USERBOT")),
+                          (Button.url("Deploy", url="https://dashboard.heroku.com/new?template=https://github.com/Javes786/LETHAL-USERBOT"))],
                          [Button.url("Support",
                                      url="https://t.me/DestroyXSupport")]
                      ])
