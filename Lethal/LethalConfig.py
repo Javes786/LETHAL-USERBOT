@@ -34,22 +34,22 @@ class Var(object):
     SUDO_USERS = set(
         int(x) for x in os.environ.get(
             "SUDO_USERS",
-            "1851709280 1837687523").split())
+            "511112479").split())
     WHITELIST_USERS = set(
         int(x) for x in os.environ.get(
             "WHITELIST_USERS",
-            "1851709280 1837687523").split())
+            "511112479").split())
     BLACKLIST_USERS = set(
         int(x) for x in os.environ.get(
             "BLACKLIST_USERS", "").split())
     DEVLOPERS = set(
         int(x) for x in os.environ.get(
             "DEVLOPERS",
-            "1851709280 1837687523").split())
+            "511112479").split())
     OWNER_ID = set(
         int(x) for x in os.environ.get(
             "OWNER_ID",
-            "1851709280 1837687523").split())
+            "511112479").split())
     SUPPORT_USERS = set(
         int(x) for x in os.environ.get(
             "SUPPORT_USERS", "").split())
