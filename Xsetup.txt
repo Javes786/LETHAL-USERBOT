@@ -38,6 +38,7 @@ httplib2
 humanize
 justwatch
 lxml
+lyricsgenius
 lottie
 nekos.py
 oauth2client
