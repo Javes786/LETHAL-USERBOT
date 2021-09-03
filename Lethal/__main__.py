@@ -7,6 +7,7 @@ from Lethal.utils import load_module, start_mybot, load_pmbot
 from pathlib import Path
 import telethon.utils
 from Lethal import CMD_HNDLR
+import os, sys 
 
 LETHAL = Var.PRIVATE_GROUP_ID
 BOTNAME = Var.TG_BOT_USER_NAME_BF_HER
@@ -41,7 +42,7 @@ else:
         print("Starting Userbot")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
-    else:
+    try:
         bot.start()
 
 path = 'Lethal/plugins/*.py'
@@ -89,3 +90,6 @@ if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.run_until_disconnected()
+    os.execl(sys.executable, sys.executable, *sys.argv)
+       quit()
+  bot.start()
