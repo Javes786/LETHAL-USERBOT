@@ -59,7 +59,7 @@ async def lg1(Lethalevent):
     await bot.send_file(
         Lethalevent.chat_id,
         file_name,
-        caption=f"**Made By**: [LethalUb](t.me/lionxupdates)",
+        caption=f"**Made By**: [LethalUb](t.me/DESTROYXOFFICIAL)",
     )
     await event.delete()
     try:
