@@ -1,6 +1,6 @@
 # Ported from other Telegram UserBots for Lethal//Made for Lethal
 # Kangers, don't remove this line
-# @its_xditya
+# @its_xditya maa chudaye
 
 """COMMAND : .pbio, .ppic, .pname, .delpfp {n}"""
 
