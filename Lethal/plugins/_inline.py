@@ -49,14 +49,14 @@ LOG_GP = Var.PRIVATE_GROUP_ID
 MESAG = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
-    else "`𝚈𝙾𝙾 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙻𝙸𝙾𝙽 𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈! 𝙿𝙻𝙴𝙰𝚂𝙴 𝚆𝙰𝙸𝚃 𝚃𝙸𝙻𝙻 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝙰𝙿𝙿𝚁𝙾𝚅𝙴. 🤓"
+    else "`𝚈𝙾𝙾 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙻𝙴𝚃𝙷𝙰𝙻 𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈! 𝙿𝙻𝙴𝙰𝚂𝙴 𝚆𝙰𝙸𝚃 𝚃𝙸𝙻𝙻 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝙰𝙿𝙿𝚁𝙾𝚅𝙴. 🤓"
 )
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lethal User"
 USER_BOT_WARN_ZERO = "`𝙸 𝙷𝙰𝚅𝙴 𝚆𝙰𝚁𝙽𝙴𝙳 𝚈𝙾𝚄 𝙽𝙾𝚃 𝚃𝙾 𝚂𝙿𝙰𝙼 😑😑. 𝙽𝙾𝚆 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 𝙱𝙴𝙴𝙽 𝙱𝙻𝙾𝙲𝙺𝙴𝙳 𝙰𝙽𝙳 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙳 𝚄𝙽𝚃𝙸𝙻 𝙵𝚄𝚃𝚄𝚁𝙴 𝙽𝙾𝚃𝙸𝙲𝙴.`\n\n**GoodBye!** "
 
 if Var.LOAD_MYBOT == "True":
     USER_BOT_NO_WARN = (
-        "**𝙷𝙴𝚈 𝚃𝙷𝙸𝚂 𝙸𝚂 𝙻𝙸𝙾𝙽 𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈 !!! 𝙷𝙴𝚁𝙴 𝚃𝙾 𝙿𝚁𝙾𝚃𝙴𝙲𝚃 [{}](tg://user?id={})**\n\n"
+        "**𝙷𝙴𝚈 𝚃𝙷𝙸𝚂 𝙸𝚂 𝙻𝙴𝚃𝙷𝙰𝙻 𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈 !!! 𝙷𝙴𝚁𝙴 𝚃𝙾 𝙿𝚁𝙾𝚃𝙴𝙲𝚃 [{}](tg://user?id={})**\n\n"
         "{}\n\n"
         "𝙵𝙾𝚁 𝚄𝚁𝙶𝙴𝙽𝚃 𝙷𝙴𝙻𝙿, 𝙿𝙼 𝚅𝙸𝙰 {}"
         "\n𝙿𝙻𝙴𝙰𝚂𝙴 𝙲𝙷𝙾𝙾𝚂𝙴 𝚆𝙷𝚈 𝚈𝙾𝚄 𝙰𝚁𝙴 𝙷𝙴𝚁𝙴, 𝙵𝚁𝙾𝙼 𝚃𝙷𝙴 𝙰𝚅𝙰𝙸𝙻𝙰𝙱𝙻𝙴 𝙾𝙿𝚃𝙸𝙾𝙽\n\n".format(
@@ -72,7 +72,7 @@ elif Var.LOAD_MYBOT == "False":
         )
     )
 
-CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "ネ")
+CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "ʕʘ̅͜ʘ̅ʔ")
 HELP_ROWS = int(os.environ.get("HELP_ROWS", 7))
 HELP_COLOUMNS = int(os.environ.get("HELP_COLOUMNS", 4))
 
@@ -90,7 +90,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             but += [[Button.url("Mʏ ᴍᴀsᴛᴇʀ »»", "tg://user?id={fuk_uid})")]]
             but += [[custom.Button.inline("Mᴀsᴛᴇʀ•ᴛᴏᴏʟs", data="mtools")]]
             but += [[custom.Button.inline("Iɴʟɪɴᴇ", data="linline")]]
-            but += [[Button.url("🔰 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ »»", "t.me/DestroyXSupport"), Button.url("🔰 Uᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ", "t.me/LethalXupdates")]]
+            but += [[Button.url("🔰 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ »»", "t.me/DestroyXSupport"), Button.url("🔰 Uᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ", "t.me/DesTRoyXOfficial")]]
             result = builder.photo(
                 file=HELP_PIC,
                 text="{}\n𝙲𝚄𝚁𝚁𝙴𝙽𝚃𝙻𝚈 𝙻𝙾𝙰𝙳𝙴𝙳 𝙿𝙻𝚄𝙶𝙸𝙽𝚂: {}".format(query, len(CMD_LIST)),
@@ -100,7 +100,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query.startswith("stats"):
             result = builder.article(
                 title="Stats",
-                text=f"**𝙻𝙸𝙾𝙽 𝚄𝙱 𝚂𝚃𝙰𝚃𝚂 𝙾𝙵 𝚃𝙷𝙴 [{DEFAULTUSER}](tg://user?id={myid})**\n\n__𝙱𝙾𝚃 𝙸𝚂 𝚂𝙼𝙾𝙾𝚃𝙷𝙻𝚈 𝚁𝚄𝙽𝙽𝙸𝙽𝙶, 𝙼𝙰𝚂𝚃𝙴𝚁!__\n\n(c) @DestroyXSupport",
+                text=f"**𝙻𝙴𝚃𝙷𝙰𝙻 𝚄𝙱 𝚂𝚃𝙰𝚃𝚂 𝙾𝙵 𝚃𝙷𝙴 [{DEFAULTUSER}](tg://user?id={myid})**\n\n__𝙱𝙾𝚃 𝙸𝚂 𝚂𝙼𝙾𝙾𝚃𝙷𝙻𝚈 𝚁𝚄𝙽𝙽𝙸𝙽𝙶, 𝙼𝙰𝚂𝚃𝙴𝚁!__\n\n(c) @DestroyXSupport",
                 buttons=[
                     [custom.Button.inline("Stats", data="statcheck")],
                     [Button.url("Repo", "https://github.com/Javes786/LETHAL-USERBOT")],
@@ -132,7 +132,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"Lethal - Telegram Userbot.",
                 buttons=[
                     [
-                        Button.url("𝙻𝙸𝙾𝙽 𝚁𝙴𝙿𝙾", "https://github.com/Javes786/LETHAL-USERBOT"),
+                        Button.url("𝙻𝙴𝚃𝙷𝙰𝙻 𝚁𝙴𝙿𝙾", "https://github.com/Javes786/LETHAL-USERBOT"),
                         Button.url(
                             "𝙳𝙴𝙿𝙻𝙾𝚈 𝙽𝙾𝚆",
                             "https://heroku.com/deploy?template=https://github.com/Javes786/LETHAL-USERBOT",
@@ -160,7 +160,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             "https://heroku.com/deploy?template=https://github.com/Javes786/LETHAL-USERBOT",
                         ),
                     ],
-                    [custom.Button.url("Updates ↗️", "https://t.me/LethalHelpChat")],
+                    [custom.Button.url("Updates ↗️", "https://t.me/Destroyxsupport")],
                 ],
                 link_preview=False,
             )
@@ -179,7 +179,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.edit(buttons=buttons)
         else:
             reply_pop_up_alert = (
-                "Please get your own Userbot from @LethalHelp , and don't use mine!"
+                "Please get your own Userbot from @Destroyxsupport , and don't use mine!"
             )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
