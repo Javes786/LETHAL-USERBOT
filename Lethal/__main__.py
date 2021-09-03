@@ -44,7 +44,7 @@ else:
         print("Startup Completed")
     try:
         bot.start()
-
+#########################################################################################
 path = 'Lethal/plugins/*.py'
 files = glob.glob(path)
 for name in files:
