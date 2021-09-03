@@ -93,3 +93,7 @@ else:
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
     bot.start()
+
+
+
+bot.loop.run_until_complete(startup_log_all_done())
