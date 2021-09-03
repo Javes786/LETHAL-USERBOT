@@ -1,6 +1,8 @@
 import os
 import logging
+
 #
+logging.getLogger("WARNING")
 logging.basicConfig(
     format="[%(levelname)s- %(asctime)s]- %(name)s- %(message)s",
     level=logging.INFO,
