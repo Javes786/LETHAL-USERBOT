@@ -1,15 +1,23 @@
 import os
+
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, scoped_session
-
+from sqlalchemy.orm import scoped_session, sessionmaker
 
 # the secret configuration specific things
-from Lethal.LethalConfig import Var
+from ..Config import Config
+from ..funcs.logger import logging
+
+LOGS = logging.getLogger(__name__)
 
 
 def start() -> scoped_session:
-    engine = create_engine(Var.DB_URI)
+    database_url = (
+        Config.DB_URI.replace("postgres:", "postgresql:")
+        if "postgres://" in Config.DB_URI
+        else Config.DB_URI
+    )
+    engine = create_engine(database_url)
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
@@ -20,5 +28,7 @@ try:
     SESSION = start()
 except AttributeError as e:
     # this is a dirty way for the work-around required for #23
-    print("DB_URI is not configured. Features depending on the database might have issues.")
-    print(str(e))
+    LOGS.error(
+        "DB_URI is not configured. Features depending on the database might have issues."
+    )
+    LOGS.error(str(e))
