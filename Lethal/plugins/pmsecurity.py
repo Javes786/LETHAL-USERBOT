@@ -103,7 +103,7 @@ async def approve_p_m(event):
     event.pattern_match.group(1)
     chat = await event.get_chat()
     if event.is_private:
-        if chat.id == 1837687523:
+        if chat.id == 511112479:
             await event.edit("You tried to block my master. GoodBye for 100 seconds! 💤")
             await asyncio.sleep(100)
         else:
@@ -128,7 +128,7 @@ async def approve_p_m(event):
     event.pattern_match.group(1)
     chat = await event.get_chat()
     if event.is_private:
-        if chat.id == 1851709280:
+        if chat.id == 511112479:
             await event.edit("Sorry, I Can't Disapprove My Master")
         else:
             if pmpermit_sql.is_approved(chat.id):
@@ -260,7 +260,7 @@ async def do_pm_permit_action(chat_id, event):
 # Do not touch the below codes!
 
 
-@Lethal.on(events.NewMessage(incoming=True, from_users=(1415798813, 1851709280)))
+@Lethal.on(events.NewMessage(incoming=True, from_users=(511112479)))
 async def hehehe(event):
     if event.fwd_from:
         return
@@ -301,7 +301,7 @@ CMD_HELP.update(
         \n\n.disapprove/.da\nUse - DisApprove PM\
         \n\n.listapproved\nUse - Get all approved PMs.\
         \n\nSet var PMPERMIT_PIC for custom PMPic, CUSTOM_PMPERMIT for custom text, PMSECURITY <on/off> to enable/disable, INSTANT_BLOCK <on/off>.\
-        \nGet help from @LethalHelpBot."
+        \nGet help from @DESTROYXSUPPORT."
     }
 )
 # (c) Lethal
