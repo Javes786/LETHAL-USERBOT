@@ -92,3 +92,4 @@ else:
     bot.run_until_disconnected()
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
+    bot.start()
