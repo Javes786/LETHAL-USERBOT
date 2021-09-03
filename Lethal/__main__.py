@@ -91,5 +91,5 @@ if len(argv) not in (1, 3, 4):
 else:
     bot.run_until_disconnected()
     os.execl(sys.executable, sys.executable, *sys.argv)
-       quit()
+    quit()
   bot.start()
