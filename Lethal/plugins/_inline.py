@@ -141,7 +141,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     [Button.url("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃", "https://t.me/DestroyXSupport")],
                 ],
             )
-        elif query == "":
+        try:
             result = builder.article(
                 "𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴",
                 text="**Welcome to Lethal**\n\n`Click below buttons for more`",
