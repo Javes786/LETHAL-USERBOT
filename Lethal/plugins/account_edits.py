@@ -11,7 +11,7 @@ from telethon.tl.functions.photos import DeletePhotosRequest, GetUserPhotosReque
 from telethon.tl.types import InputPhoto
 
 from Lethal import CMD_HELP
-
+from Lethal.utils import admin_cmd
 
 @Lethal.on(admin_cmd(pattern="pbio (.*)"))  # pylint:disable=E0602
 async def _(event):
