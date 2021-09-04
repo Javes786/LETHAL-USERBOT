@@ -25,7 +25,7 @@ from datetime import datetime
 from telethon import Button, custom, events, functions
 
 from telethon.tl.functions.users import GetFullUserRequest
-
+from . import *
 from Lethal import ALIVE_NAME, CMD_HELP, CMD_LIST, CUSTOM_PMPERMIT, bot
 from Lethal.LethalConfig import Var
 
