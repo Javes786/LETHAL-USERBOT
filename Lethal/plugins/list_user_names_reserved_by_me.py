@@ -12,7 +12,7 @@ from Lethal.utils import admin_cmd, sudo_cmd
 async def _(event):
     if event.fwd_from:
         return
-    result = await borg(functions.channels.GetAdminedPublicChannelsRequest())
+    result = await Lethal(functions.channels.GetAdminedPublicChannelsRequest())
     output_str = ""
     for channel_obj in result.chats:
         output_str += f"- {channel_obj.title} @{channel_obj.username} \n"
