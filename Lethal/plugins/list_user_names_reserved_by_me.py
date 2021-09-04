@@ -1,13 +1,14 @@
 # For @UniBorg
 # (c) Shrimadhav U K
-
+# PLUGINS KI MAA CHODNE WALA AMAAN :)
 from telethon import functions
 
 from Lethal import CMD_HELP
-from Lethal.utils import admin_cmd
+from Lethal.utils import admin_cmd, sudo_cmd
 
 
 @Lethal.on(admin_cmd(pattern=r"listmyusernames", outgoing=True))
+@Lethal.on(sudo_cmd(pattern=r"listmyusernames", outgoing=True, allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
