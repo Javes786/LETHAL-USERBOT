@@ -24,7 +24,7 @@ import asyncio
 import os
 import requests
 from Lethal.plugins.mybot.sql.blacklist_sql import all_bl_users
-from Lethal.plugins import LETHAL_NAME
+from Lethal.plugins import ALIVE_NAME
 from Lethal.plugins.mybot.sql.userbase_sql import add_to_userbase, present_in_userbase, full_userbase
 from datetime import datetime
 from telethon import events
@@ -170,7 +170,7 @@ async def settings(event):
     await event.delete()
     await tgbot.send_message(event.chat_id,
                              poto,
-                             f"This is the personal help bot of {LETHAL_NAME}. You can contact me using this bot if necessary, or if I missed out your PM.",
+                             f"This is the personal help bot of {ALIVE_NAME}. You can contact me using this bot if necessary, or if I missed out your PM.",
                              buttons=[
                                      [Button.inline(
                                          "Deploy me for yourself", data="deployme")]
