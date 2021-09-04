@@ -1,7 +1,7 @@
 # For @UniBorg
 # (c) Shrimadhav U K
 # PLUGINS KI MAA CHODNE WALA AMAAN :)
-from telethon import functions
+from telethon import functions, events
 
 from Lethal import CMD_HELP
 from Lethal.utils import admin_cmd, sudo_cmd
