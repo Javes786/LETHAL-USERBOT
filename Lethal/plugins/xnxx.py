@@ -9,7 +9,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from Lethal.utils import admin_cmd
 
 
-@Lethal.on(admin_cmd(pattern=r"alive", Outgoing=True))
+@Lethal.on(admin_cmd(outgoing=True, pattern="alive"))
 async def _(event):
     if event.fwd_from:
         return
@@ -34,7 +34,7 @@ async def _(event):
             await event.client.send_file(event.chat_id, response.message)
 
 
-@Lethal.on(admin_cmd(pattern=r"picx", Outgoing=True))
+@Lethal.on(admin_cmd(outgoing=True, pattern="picx"))
 async def _(event):
     if event.fwd_from:
         return
@@ -59,7 +59,7 @@ async def _(event):
             await event.client.send_file(event.chat_id, response.message)
 
 
-@Lethal.on(admin_cmd(pattern=r"les", Outgoing=True))
+@Lethal.on(admin_cmd(outgoing=True, pattern="les"))
 async def _(event):
     if event.fwd_from:
         return
