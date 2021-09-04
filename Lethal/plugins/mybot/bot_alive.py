@@ -5,7 +5,7 @@ from telethon import Button, events
 
 from Lethal import ALIVE_NAME, bot
 
-currentversion = "2.1"
+currentversion = "0.1"
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση x υsεт"
@@ -18,13 +18,13 @@ else:
 
 pm_caption = " ►**ɦɛʏʏ ʏօʊʀ ǟֆֆɨֆȶǟռȶ ɨֆ `օռʟɨռɛ`\n\n"
 pm_caption += "► **Sʏsᴛᴇᴍ sᴛᴀᴛs**\n"
-pm_caption += "► **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ:** `1.21.1` \n"
-pm_caption += f"► **Lɪᴏɴ X ᴀssɪᴛᴀɴᴛ ᴠᴇʀsɪᴏɴ** : `{currentversion}`\n"
+pm_caption += "► **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ:** `1.21.3` \n"
+pm_caption += f"► **ℓєτнαℓ ᴀssɪᴛᴀɴᴛ ᴠᴇʀsɪᴏɴ** : `{currentversion}`\n"
 pm_caption += f"► **Mʏ ᴍᴀsᴛᴇʀ** : {DEFAULTUSER} \n"
-pm_caption += "► **Lɪᴏɴ X ʟɪᴄᴇɴsᴇ** : [GNU General Public License v3.0](https://github.com/teamLETHAL-USERBOT/LETHAL-USERBOT/blob/master/LICENSE)\n"
-pm_caption += "► **Cᴏᴘʏʀɪɢʜᴛ** :[LɪᴏɴX](https://github.com/teamLETHAL-USERBOT/LETHAL-USERBOT)\n"
+pm_caption += "► **ℓєτнαℓ ʟɪᴄᴇɴsᴇ** : [GNU General Public License v3.0](https://github.com/Javes786/LETHAL-USERBOT/blob/master/LICENSE)\n"
+pm_caption += "► **Cᴏᴘʏʀɪɢʜᴛ** :[ℓєτнαℓ](https://github.com/Javes786/LETHAL-USERBOT)\n"
 light = [[Button.url("✧ʀᴇᴘᴏsɪᴛᴏʀʏ✧",
-                     "https://github.com/teamLETHAL-USERBOT/LETHAL-USERBOT"),
+                     "https://github.com/Javes786/LETHAL-USERBOT"),
           Button.url("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ",
                      "https://t.me/DestroyXSupport")]]
 
