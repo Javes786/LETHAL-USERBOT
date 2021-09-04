@@ -15,7 +15,7 @@ from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 
 from Lethal.LethalConfig import Var
-from Lethal.utils import admin_cmd
+from Lethal.utils import admin_cmd, sudo_cmd
 
 # =================== CONSTANT ===================
 
