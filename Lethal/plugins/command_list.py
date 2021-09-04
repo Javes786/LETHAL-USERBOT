@@ -30,7 +30,7 @@ async def install(event):
     r = requests.post(url, data=message.encode("UTF-8")).json()
     url = f"https://del.dog/{r['key']}"
     await event.edit(
-        f"`All plugins available in` **Lethal** `can be found` [here]({https://github.com/Javes786/LETHAL-USERBOT/Lethal/plugins})!!"
+        f"`All plugins available in` **Lethal** `can be found` [here]({url})!!"
     )
 
 
