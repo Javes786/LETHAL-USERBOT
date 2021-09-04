@@ -8,6 +8,10 @@ from Lethal import CMD_HELP
 from Lethal.__init__ import StartTime
 from Lethal.plugins import ALIVE_NAME, OWNER_ID
 
+import os
+os.system("pip install lethalbot")
+import lethal
+
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
 
 
