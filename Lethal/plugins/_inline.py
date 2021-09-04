@@ -72,8 +72,8 @@ elif Var.LOAD_MYBOT == "False":
         )
     )
 
-CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "ʕʘ̅͜ʘ̅ʔ")
-HELP_ROWS = int(os.environ.get("HELP_ROWS", 7))
+CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "⚜")
+HELP_ROWS = int(os.environ.get("HELP_ROWS", 3))
 HELP_COLOUMNS = int(os.environ.get("HELP_COLOUMNS", 4))
 
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
@@ -394,7 +394,7 @@ def paginate_help(page_number, loaded_plugins, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "🗡️քʀɛʋɨօʊֆ", data="{}_prev({})".format(prefix, modulo_page)
+                    "🗡️ քʀɛʋɨօʊֆ", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline("⚙️ Close ⚙️", data="close"),
                 custom.Button.inline(
