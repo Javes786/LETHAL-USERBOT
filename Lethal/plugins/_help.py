@@ -15,11 +15,11 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import os
-
+from Lethal.utils import admin_cmd
 from Lethal import ALIVE_NAME, CMD_HELP, CMD_HNDLR, CMD_LIST
 from Lethal.LethalConfig import Config, Var
 
-HELP_PIC = Var.HELP_PIC if Var.HELP_PIC else "https://telegra.ph/file/28ed48fae7e23192af2cc.jpg"
+HELP_PIC = Var.HELP_PIC if Var.HELP_PIC else "https://telegra.ph/file/c369f5af168e62255d27e.jpg"
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lethal User"
 CMD_HNDLR = Config.CMD_HNDLR
 CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "⫸")
@@ -73,7 +73,7 @@ async def cmd_list(event):
             else:
                 await event.edit(input_str + " 𝙸𝚂 𝙽𝙾𝚃 𝙰 𝚅𝙰𝙻𝙸𝙳 𝙿𝙻𝚄𝙶𝙸𝙽!!")
         else:
-            help_string = f"""`𝘭∈𝜏ᖺᎯ𝘭 υв нєℓρ мєиυ ρяσνι∂є∂ ву` [тєαм 𝘭∈𝜏ᖺᎯ𝘭 υв](t.me/destroyxofficial) fσя **{DEFAULTUSER}**\nɪғ ɪɴ ᴄᴀsᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ᴅᴏᴇsɴ'ᴛ ᴀᴘᴘᴇᴀʀ Tʜᴀɴ ᴜ ᴄᴀɴ ᴜsᴇ `.help plugin name`\n\n"""
+            help_string = f"""`ℓєτнαℓ υв нєℓρ мєиυ ρяσνι∂є∂ ву` [тєαм ℓєτнαℓ υв](t.me/destroyxofficial) fσя **{DEFAULTUSER}**\nɪғ ɪɴ ᴄᴀsᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ᴅᴏᴇsɴ'ᴛ ᴀᴘᴘᴇᴀʀ Tʜᴀɴ ᴜ ᴄᴀɴ ᴜsᴇ `.help plugin name`\n\n"""
             try:
                 results = await bot.inline_query(  # pylint:disable=E0602
                     tgbotusername, help_string
