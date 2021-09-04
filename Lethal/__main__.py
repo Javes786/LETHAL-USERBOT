@@ -1,6 +1,7 @@
 import glob
 from sys import argv
-from telethon import TelegramClient as bot
+from telethon import TelegramClient 
+from Lethal import bot
 from Lethal.LethalConfig import Var
 from Lethal.utils import load_module, start_mybot, load_pmbot
 from pathlib import Path
