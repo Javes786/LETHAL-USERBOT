@@ -21,7 +21,7 @@ from telethon.utils import get_input_location
 
 from Lethal import CMD_HELP
 from Lethal.utils import admin_cmd, sudo_cmd
-
+from Lethal.utils import edit_or_reply as eor
 
 @Lethal.on(admin_cmd(pattern="chatinfo(?: |$)(.*)", outgoing=True))
 @Lethal.on(sudo_cmd(pattern="chatinfo(?: |$)(.*)"))
