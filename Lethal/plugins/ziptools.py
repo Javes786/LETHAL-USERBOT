@@ -1,4 +1,4 @@
-# © ultroid
+# © ultroid maachudaye krliya kang toh kya kru
 import glob
 import os
 import time
@@ -88,7 +88,7 @@ async def unzipp(event):
         for x in ok:
             k = time.time()
             xxx = await uploader(x, x, k, xx, "υρℓσα∂ιηg...")
-            await ultroid_bot.send_file(
+            await borg.send_file(
                 event.chat_id,
                 xxx,
                 force_document=True,
@@ -121,7 +121,7 @@ async def azipp(event):
             file = image.name
         else:
             file = await event.download_media(reply.media, "zip/")
-    await xx.edit(f"∂σωηℓσα∂ε∂ `{file}` sυccsғυℓℓү...\n©тεαм ℓιση")
+    await xx.edit(f"∂σωηℓσα∂ε∂ `{file}` sυccsғυℓℓү...\n©тεαм ℓєτнαℓ")
 
 
 @Lethal.on(admin_cmd(pattern="dozip ?(.*)"))
@@ -131,10 +131,10 @@ async def do_zip(event):
             event, "First All Files Via {i}addzip then doZip to zip all files at one."
         )
     xx = await eor(event, "`processing`")
-    await bash(f"zip -r ultroid.zip zip/*")
+    await bash(f"zip -r lethalub.zip zip/*")
     k = time.time()
     xxx = await uploader("lethalub.zip", "lethalub.zip", k, xx, "υρℓσα∂ιηg...")
-    await ultroid_bot.send_file(
+    await borg.send_file(
         event.chat_id,
         xxx,
         force_document=True,
