@@ -26,7 +26,7 @@ file1 = "https://telegra.ph/file/33f7e8dc3bb38cbe25991.jpg"
 CUSTOM_ALIVE = (
     Var.CUSTOM_ALIVE
     if Var.CUSTOM_ALIVE
-    else "LETHAL ʊֆɛʀɮօȶ ɨֆ օռʟɨռɛ!"
+    else "ℓєτнαℓ ʊֆɛʀɮօȶ ɨֆ օռʟɨռɛ!"
 )
 ALV_PIC = Var.ALIVE_PIC if Var.ALIVE_PIC else "https://telegra.ph/file/33f7e8dc3bb38cbe25991.jpg"
 lethalemoji = Var.CUSTOM_ALIVE_EMOJI if Var.CUSTOM_ALIVE_EMOJI else "**〢**"
