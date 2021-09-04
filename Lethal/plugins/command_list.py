@@ -23,17 +23,17 @@ async def install(event):
     o = "\n".join(_o)
     OUTPUT = (
         OUTPUT
-    ) = f"Here is the list of plugins found in 'master' branch of Lethal.\n{o}\n\nUse .help <cmd_name> to learn how a paticular plugin works.\nConsider joining @LethalSupport for help!"
-    await tele.edit("`Plugins extracted, pasting it...`")
+    ) = f"Here is the list of plugins found in 'main' branch of Lethal.\n{o}\n\nUse .help <cmd_name> to learn how a paticular plugin works.\nConsider joining @DesTRoYxSupport for help!"
+    await event.edit("`Plugins extracted, pasting it...`")
     message = OUTPUT
     url = "https://del.dog/documents"
     r = requests.post(url, data=message.encode("UTF-8")).json()
     url = f"https://del.dog/{r['key']}"
-    await tele.edit(
-        f"`All plugins available in` **Lethal** `can be found` [here]({url})!!"
+    await event.edit(
+        f"`All plugins available in` **Lethal** `can be found` [here]({https://github.com/Javes786/LETHAL-USERBOT/Lethal/Plugins})!!"
     )
 
 
 CMD_HELP.update(
-    {"command_list": ".cmds\nUse - Get the list of all plugins in the bot."}
+    {"command_list": ".cmds\nUse - Get the list of all plugins in the userbot."}
 )
