@@ -11,6 +11,8 @@ from Lethal.LethalConfig import Var
 import time
 import logging
 
+logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
+                    level=logging.WARNING)
 
 if Var.STRING_SESSION:
     session_name = str(Var.STRING_SESSION)
